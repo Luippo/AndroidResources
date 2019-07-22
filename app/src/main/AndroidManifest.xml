@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".VideoViewActivity"></activity>
+        <activity
+            android:name=".VideoPlayerActivity"
+            android:label="Video Player" />
         <activity
             android:name=".KotlinMusicPlayer"
-            android:label="Music Player"/>
+            android:label="Music Player" />
         <activity android:name=".BackgroundTest" />
         <activity android:name=".MainActivity">
             <intent-filter>

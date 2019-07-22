@@ -13,5 +13,12 @@ class MainActivity : AppCompatActivity() {
 
         val buttonMusicPlayer = findViewById<Button>(R.id.reproductor)
         buttonMusicPlayer.setOnClickListener { startActivity(Intent(this,KotlinMusicPlayer::class.java)) }
+
+        val buttonPickVideo = findViewById<Button>(R.id.videoplayer)
+        buttonPickVideo.setOnClickListener { startActivity(Intent(this, VideoPlayerActivity::class.java)) }
+
+        val buttonVideoPlayer = findViewById<Button>(R.id.video_player2)
+        buttonVideoPlayer.setOnClickListener { startActivity(Intent(this, VideoViewActivity::class.java)) }
+
     }
 }
