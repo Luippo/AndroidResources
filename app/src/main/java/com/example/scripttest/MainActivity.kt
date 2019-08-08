@@ -20,5 +20,7 @@ class MainActivity : AppCompatActivity() {
         val buttonVideoPlayer = findViewById<Button>(R.id.video_player2)
         buttonVideoPlayer.setOnClickListener { startActivity(Intent(this, VideoViewActivity::class.java)) }
 
+        val buttonBluetooth = findViewById<Button>(R.id.conection_device)
+        buttonBluetooth.setOnClickListener { startActivity(Intent(this, SelectDeviceActivity::class.java)) }
     }
 }

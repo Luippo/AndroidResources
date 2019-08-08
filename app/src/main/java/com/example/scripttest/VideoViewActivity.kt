@@ -22,9 +22,18 @@ class VideoViewActivity : AppCompatActivity() {
         videoView.setVideoURI(uri)
 
         val mediaController = MediaController(this)
-        videoView.setMediaController(mediaController)
-        mediaController.setAnchorView(videoView)
+        videoView.setMediaController(null)
+        //mediaController.setAnchorView(videoView)
 
+        val buttonPlay = findViewById<Button>(R.id.play)
+        buttonPlay.setOnClickListener {
+            videoView.start()
+        }
+
+        val buttonPause = findViewById<Button>(R.id.pause)
+        buttonPause.setOnClickListener {
+            videoView.pause()
+        }
 
     }
 }
